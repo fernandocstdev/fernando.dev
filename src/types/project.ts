@@ -1,9 +1,9 @@
 export interface Project {
-	name: String,
-	description: String,
-	technologies: String[],
-	url?: String,
+	name: string,
+	description: string,
+	technologies: string[],
+	url?: string,
 	repository: string,
 	date: Date,
-	image?: String
+	image?: string 
 }
