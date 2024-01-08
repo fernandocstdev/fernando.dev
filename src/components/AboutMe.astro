@@ -1,0 +1,83 @@
+---
+import { Image } from "astro:assets";
+---
+
+<article
+  class="flex flex-col items-start justify-start w-full md:w-2/3 mt-10 lg:mb-32"
+>
+  <p class="font-semibold text-gray-900 text-sm lg:text-base text-start">
+    Hola 👋
+  </p>
+  <h1 class="mt-2 text-base lg:text-xl font-bold text-gray-800">
+    Soy Fernando, un apasionado desarrollador web fullstack con un enfoque en la
+    creación de experiencias digitales dinámicas y funcionales. Mi viaje en el
+    mundo del desarrollo comenzó con un amor por la resolución de problemas y la
+    creatividad, lo que me llevó a explorar diferentes lenguajes de programación
+    y tecnologías.
+  </h1>
+  <h2 class="mt-6 text-sm lg:text-base text-gray-600">
+    Con una sólida experiencia en el diseño de aplicaciones web interactivas y
+    sitios escalables, me esfuerzo por combinar lo mejor del frontend y el
+    backend para ofrecer soluciones innovadoras. Disfruto trabajar en entornos
+    colaborativos donde puedo aportar mis habilidades técnicas para transformar
+    ideas en productos tangibles.
+  </h2>
+
+  <div class="mt-16">
+    <h3 class="mb-5 text-sm font-semibold">Tecnologias</h3>
+    <p>
+      <Image
+        alt="Iconos de tecnologicas"
+        width="900"
+        height="80"
+        loading="lazy"
+        src="https://skillicons.dev/icons?i=js,ts,html,css,git,java,nodejs,express,mongodb,astro,react,nextjs,babel,vite,webpack,laravel,php,mysql,postgres,swift,tailwind,vscode"
+      />
+    </p>
+  </div>
+
+  <div class="mt-20">
+    <h3 class="mb-2 text-sm font-semibold text-gray-800">Educacion</h3>
+    <h4 class="text-base lg:text-lg font-semibold mt-2 text-gray-900">
+      Universidad
+    </h4>
+    <p class="font-normal text-sm lg:text-base text-gray-800">
+      Me gradue de la carrera de <strong
+        >Ingenieria en Sistemas Comutacionales
+      </strong> con la especialidad en Ciencias de Datos en el Instituto Tecnologico
+      de Zacatepec en 2023,
+    </p>
+    <h4 class="text-base lg:text-lg font-semibold mt-10 text-gray-900">
+      Educación complementaria
+    </h4>
+    <p class="font-normal text-sm lg:text-base text-gray-800">
+      A lo largo de mi formacion academica he tomado gran variedad de cursos,
+      principalmente de tecnologias que sean del lado del Front-end, sin embargo
+      tambien tengo conocimientos sobre tecnologias Back-end. <br />
+      Estos ultimos meses he tenido gran curiosidad por aprender mas acerca del Diseño
+      Web, por lo que me di a la tarea de aprender un poco sobre diseño UI/UX.
+    </p>
+  </div>
+  <div class="mt-20 w-full">
+    <h3 class="mb-2 text-sm font-semibold text-gray-800">Experiencia</h3>
+    <div class="flex flex-col md:flex-row gap-4 md:gap-10">
+      <div
+        class="md:w-1/2 rounded-2xl bg-[#f2f2f2] border border-gray-300 shadow-md p-5"
+      >
+        <p class="font-bold text-blue-600 text-2xl md:text-4xl">+1 Año</p>
+        <p class="text-gray-600 text-base">
+          de experiencia en la creacion de páginas web dinamicas y responsivas.
+        </p>
+      </div>
+      <div
+        class="md:w-1/2 rounded-2xl bg-[#f2f2f2] border border-gray-300 shadow-md p-5"
+      >
+        <p class="font-bold text-blue-600 text-2xl md:text-4xl">+2 Años</p>
+        <p class="text-gray-600 text-base">
+          de experiencia en la creacion y administracion de bases de datos SQL y
+          NoSQL.
+        </p>
+      </div>
+    </div>
+  </div>
+</article>

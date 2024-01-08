@@ -1,0 +1,46 @@
+---
+import LinkedIn from "@components/icons/LinkedIn.astro";
+import GitHub from "@components/icons/GitHub.astro";
+import Send from "@components/icons/Send.astro";
+---
+
+<section
+  class="sm:mt-0 justify-center items-center sm:h-screen flex flex-col px-8 sm:px-24 xl:px-72"
+  id="top"
+>
+  <h1
+    class="font-black text-2xl md:text-4xl lg:text-6xl xl:text-8xl mt-32 md:mt-0 tracking-tight text-center text-blue-600"
+  >
+    Fernando <span class="texto-borde">Dorantes</span>
+  </h1>
+  <h2 class="mt-5 text-sm md:text-lg text-gray-600 max-w-[700px] text-center">
+    +1 año de experiencia. Soy un apasionado Desarrollador frontend, con un
+    enfoque en la creación de experiencias digitales dinámicas y funcionales.
+  </h2>
+
+  <ul class="mt-10 flex justify-center flex-wrap gap-2 sm:flex-row">
+    <li class="">
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/fernando-dorantes/"
+        class="flex gap-1 items-center w-fit justify-center bg-blue-600 rounded-full px-4 py-2 text-xs hover:bg-blue-800 font-light text-gray-100 tracking-wider transition-all"
+        >LinkedIn <LinkedIn /></a
+      >
+    </li>
+    <li>
+      <a
+        target="_blank"
+        href="https://github.com/fernandocstdev"
+        class="flex gap-1 items-center justify-center w-fit bg-blue-600 rounded-full px-4 py-2 text-xs hover:bg-blue-800 font-light text-gray-100 tracking-wider transition-all"
+        >GitHub <GitHub /></a
+      >
+    </li>
+    <li>
+      <a
+        href="mailto:fernandodorantes.dev@gmail.com"
+        class="flex gap-1 items-center justify-center w-fit bg-blue-600 rounded-full px-4 py-2 text-xs hover:bg-blue-800 font-light text-gray-100 tracking-wider transition-all"
+        >fernandodorantes.dev@gmail.com <Send /></a
+      >
+    </li>
+  </ul>
+</section>

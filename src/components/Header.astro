@@ -1,0 +1,24 @@
+---
+import { Image } from "astro:assets";
+import Navbar from "./Navbar.astro";
+---
+
+<header
+  class="flex justify-between px-8 md:px-20 lg:px-40 xl:px-72 py-3 sm:py-5 items-center fixed w-full"
+>
+  <Image
+    src="/public/img/avatar.webp"
+    alt="Avatar Fernando Dorantes"
+    class="rounded-full border-2 border-blue-600"
+    width="50"
+    height="50"
+  />
+  <Navbar />
+
+  <!-- NavMobile -->
+
+  <div
+    class="absolute inset-0 w-full blur-3xl bg-transparent backdrop-blur-3xl -z-10"
+  >
+  </div>
+</header>

@@ -1,0 +1,26 @@
+---
+import { PROJECTS } from "../consts/projects";
+import ProjectItem from "@components/ProjectItem.astro";
+
+const projectsSorted = PROJECTS.sort((a, b) => Number(b.date) - Number(a.date));
+---
+
+<div class="grid w-full grid-cols-1 gap-4 md:mb-20">
+  {
+    projectsSorted.map(
+      ({ name, description, url, date, repository, technologies, image }) => {
+        return (
+          <ProjectItem
+            name={name}
+            description={description}
+            date={date}
+            repository={repository}
+            url={url}
+            technologies={technologies}
+            image={image}
+          />
+        );
+      }
+    )
+  }
+</div>

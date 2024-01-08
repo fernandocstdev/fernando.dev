@@ -1,0 +1,74 @@
+---
+import GitHub from "@components/icons/GitHub.astro";
+import ArrowLeft from "@components/icons/ArrowLeft.astro";
+import Badge from "@components/Badge.astro";
+import { Image } from "astro:assets";
+
+interface Props {
+  name: String;
+  description: String;
+  technologies: String[];
+  url?: String;
+  repository: string;
+  image?: String;
+  date: Date;
+}
+
+const { name, description, technologies, url, image, repository, date } =
+  Astro.props;
+
+const isImage = image ? `/public/img/${image}` : null;
+---
+
+<article
+  class="border border-gray-200 shadow-md p-8 rounded-3xl w-full gap-3 flex flex-col bg-[#f2f2f2] h-fit"
+>
+  <header>
+    <h1 class="font-bold text-base lg:text-lg text-gray-700">
+      {name}
+    </h1>
+
+    <p class="text-gray-600 my-1 text-xs lg:text-sm text-pretty">
+      {description}
+    </p>
+  </header>
+
+  <div class="flex gap-1 flex-wrap">
+    {technologies.map((tech) => <Badge>{tech}</Badge>)}
+  </div>
+
+  {
+    isImage && (
+      <Image
+        loading="lazy"
+        decoding="async"
+        class="w-full rounded-2xl mt-3 shadow object-contain object-top aspect-auto"
+        src={isImage}
+        alt="imagen"
+        width={100}
+        height={100}
+      />
+    )
+  }
+
+  <footer class="flex gap-3 mt-3">
+    <!--  {
+      url && (
+        <a
+          href={`/proyectos/${url}`}
+          class="px-3 py-1 gap-x-1 flex items-center justify-center cursor-pointer transition bg-blue-600 text-gray-100 text-xs lg:text-sm font-normal rounded-full hover:bg-blue-800 w-fit"
+        >
+          <ArrowLeft />
+          Ver mas
+        </a>
+      )
+    } -->
+    <a
+      href={repository}
+      class="px-3 py-1 flex gap-x-2 items-center justify-center cursor-pointer transition hover:bg-gray-300/60 bg-transparent text-gray-900 text-xs lg:text-sm font-normal rounded-full border border-gray-300 w-fit"
+    >
+      <GitHub />
+      Repositorio
+    </a>
+  </footer>
+</article>

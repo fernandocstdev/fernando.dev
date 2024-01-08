@@ -1,0 +1,47 @@
+---
+import { Image } from "astro:assets";
+---
+
+<footer
+  class="flex flex-col lg:flex-row lg:justify-between lg:items-center mt-32 py-20 px-8 md:px-20 lg:px-40 xl:px-72 w-full"
+>
+  <section>
+    <article class="flex gap-2 items-center">
+      <Image
+        src="/public/img/avatar.webp"
+        class="rounded-full border-2 border-blue-600"
+        width="50"
+        height="50"
+        alt="Avatar Fernando Dorantes"
+        loading="lazy"
+        decoding="async"
+      />
+      <div>
+        <p class="font-bold text-gray-900 text-sm lg:text-lg">
+          Fernando Dorantes Castillo
+        </p>
+        <p class="text-xs lg:text-sm font-bold text-gray-700">
+          Desarrollador Front-end Jr
+        </p>
+      </div>
+    </article>
+  </section>
+  <section class="flex flex-col gap-1 mt-10 lg:mt-0 lg:items-end">
+    <a
+      href="https://www.linkedin.com/in/fernando-dorantes/"
+      target="_blank"
+      class="text-xs lg:text-sm text-gray-700 font-medium">LinkedIn</a
+    >
+    <a
+      target="_blank"
+      href="https://github.com/fernandocstdev"
+      class="text-xs lg:text-sm text-gray-700 font-medium">GitHub</a
+    >
+    <a
+      href="mailto:fernandodorantes.dev@gmail.com"
+      target="_blank"
+      class="text-xs lg:text-sm text-gray-700 font-medium"
+      >fernandodorantes.dev@gmail.com</a
+    >
+  </section>
+</footer>
