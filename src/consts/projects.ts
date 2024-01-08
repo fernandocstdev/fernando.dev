@@ -15,7 +15,7 @@ export const PROJECTS: Project[] = [
 		repository: 'https://github.com/fernandocstdev/control-gastos-app',
 		url: 'control-de-gastos',
 		date: new Date('11/19/2023'),
-		image: 'control-gastos.webp'
+		image: 'https://res.cloudinary.com/doby4wtg5/image/upload/v1704746741/control-gastos_qbncqq.webp'
 	},
 	{
 		name: 'Api REST - Blog',
@@ -31,7 +31,7 @@ export const PROJECTS: Project[] = [
 		technologies: ['Astro', 'Tailwind', 'JavaScript'],
 		url: 'space-x-launch',
 		date: new Date('09/25/2023'),
-		image: 'space-x.webp'
+		image: 'https://res.cloudinary.com/doby4wtg5/image/upload/v1704746751/space-x_qxskxc.webp'
 	},
 	{
 		name:'Todo List',
@@ -40,7 +40,7 @@ export const PROJECTS: Project[] = [
 		technologies: ['TypeScript', 'Next Js', 'Tailwind', 'React'],
 		url: 'todo-list',
 		date: new Date('09/25/2023'),
-		image: 'todo-list.webp'
+		image: 'https://res.cloudinary.com/doby4wtg5/image/upload/v1704746764/todo-list_uifdvj.webp'
 	},
 	{
 		name:'Spotify Clone',
@@ -48,6 +48,6 @@ export const PROJECTS: Project[] = [
 		repository: 'https://github.com/fernandocstdev/spotify-clone',
 		technologies: ['TypeScript', 'Next Js', 'Tailwind', 'React'],
 		date: new Date('01/04/2024'),
-		image: 'spotify.webp'
+		image: 'https://res.cloudinary.com/doby4wtg5/image/upload/v1704746759/spotify_b1vufm.webp'
 	}
 ]
